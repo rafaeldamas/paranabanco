@@ -1,46 +1,67 @@
-<h1 align="center">
-    <a href="https://pt-br.reactjs.org/">Desafio Técnico ParanaBanco</a>
-</h1>
-<p align="center">Desafio técnico de gerenciamento de API de usuários</p>
+# 🚀 Desafio Técnico - ParanaBanco  
+### Gerenciamento de API de Usuários • Testes Automatizados
 
-Tabela de conteúdos
-=================
-<!--ts-->
-   * [Sobre](#-sobre-o-projeto)
-   * [Como executar o projeto](#-como-executar-o-projeto)
-      * [Pré-requisitos](#pré-requisitos)
-      * [Rodando o Software](#-rodando-o-software)
-   * [Tecnologias](#-tecnologias)
-<!--te-->
-
-## 💻 Sobre o projeto
-
-Este é um projeto do desafio da ParanaBanco de gerenciamento da API de usuários. Nele nós podemos fazer os seguintes cenários: Listagem de usuários, Criação de usuário, Alteração dos dados de usuários e Exclusão de um usuário. 
+<p align="center">
+  <img src="https://img.shields.io/badge/Ruby-3.1.4-red?logo=ruby" />
+  <img src="https://img.shields.io/badge/Cucumber-Tests-brightgreen?logo=cucumber" />
+  <img src="https://img.shields.io/badge/HTTParty-API-blue" />
+  <img src="https://img.shields.io/badge/Status-Completo-success" />
+</p>
 
 ---
 
-## 🚀 Como executar o projeto
+## 📌 Sobre o Projeto
 
-Este projeto só contém os testes automatizados da API disponibilizada.
+Este repositório contém a solução do **Desafio Técnico do ParanaBanco**, cujo objetivo é validar o funcionamento da API de usuários disponibilizada.  
+Os testes automatizados cobrem os seguintes cenários:
+
+- ✔️ **Listagem de usuários**  
+- ✔️ **Criação de usuário**  
+- ✔️ **Alteração de dados**  
+- ✔️ **Exclusão de usuário**
+
+Todo o fluxo é testado utilizando **Ruby**, **Cucumber**, **Rspec** e **HTTParty**.
+
+---
+
+## 📁 Tabela de Conteúdos
+<!--ts-->
+- [Sobre o Projeto](#-sobre-o-projeto)
+- [Como Executar o Projeto](#-como-executar-o-projeto)
+  - [Pré-requisitos](#pré-requisitos)
+  - [Instalação e Execução](#-rodando-o-software)
+- [Estrutura do Projeto](#-estrutura-do-projeto)
+- [Tecnologias Utilizadas](#-tecnologias)
+<!--te-->
+
+---
+
+## 🚀 Como Executar o Projeto
+
+Este repositório contém apenas **testes automatizados**, que validam a API já existente.
 
 ### Pré-requisitos
 
-Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com), [Ruby 3.1.4](https://rubyinstaller.org/downloads/).  
-Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+Você precisa ter instalado em sua máquina:
+
+- [Git](https://git-scm.com)  
+- [Ruby 3.1.4](https://rubyinstaller.org/downloads/)  
+- Editor recomendado: [VSCode](https://code.visualstudio.com/)
+
+---
 
 ### 🎲 Rodando o Software
 
 ```bash
 # Clone este repositório
-$ git clone https://github.com/rafaeldamas/paranabanco
+git clone https://github.com/rafaeldamas/paranabanco
 
-# Acesse a pasta do projeto no terminal/cmd
-$ cd paranabanco
+# Acesse o diretório do projeto
+cd paranabanco
 
 # Instale as dependências
-$ gem install bundler
-$ bundle install
+gem install bundler
+bundle install
 
 # Execute os testes
-$ cucumber
+cucumber
