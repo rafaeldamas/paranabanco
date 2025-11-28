@@ -20,7 +20,7 @@ Os testes automatizados cobrem os seguintes cenários:
 - ✔️ **Alteração de dados**  
 - ✔️ **Exclusão de usuário**
 
-Todo o fluxo é testado utilizando **Ruby**, **Cucumber**, **Rspec** e **HTTParty**.
+Todo o fluxo é testado utilizando **Ruby**, **Cucumber**, **RSpec** e **HTTParty**.
 
 ---
 
@@ -29,9 +29,9 @@ Todo o fluxo é testado utilizando **Ruby**, **Cucumber**, **Rspec** e **HTTPart
 - [Sobre o Projeto](#-sobre-o-projeto)
 - [Como Executar o Projeto](#-como-executar-o-projeto)
   - [Pré-requisitos](#pré-requisitos)
-  - [Instalação e Execução](#-rodando-o-software)
+  - [Executando os Testes Automatizados](#-executando-os-testes-automatizados)
 - [Estrutura do Projeto](#-estrutura-do-projeto)
-- [Tecnologias Utilizadas](#-tecnologias)
+- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
 <!--te-->
 
 ---
@@ -50,7 +50,7 @@ Você precisa ter instalado em sua máquina:
 
 ---
 
-### 🎲 Rodando o Software
+### 🎲 Executando os Testes Automatizados
 
 ```bash
 # Clone este repositório
@@ -65,3 +65,43 @@ bundle install
 
 # Execute os testes
 cucumber
+```
+
+---
+
+## 📂 Estrutura do Projeto
+
+```bash
+paranabanco/
+│
+├── features/
+│   ├── specs/                  # Cenários de teste
+│   ├── step_definitions/       # Steps do Cucumber
+│   ├── support/                # Configurações auxiliares
+│   └── fixtures/               # Massa de dados
+│
+├── Gemfile                     # Dependências Ruby
+├── cucumber.yml                # Configurações do Cucumber
+└── README.md                   # Documentação
+```
+
+---
+
+### 🛠 Tecnologias Utilizadas
+
+As principais ferramentas usadas no projeto:
+
+- Ruby 3.1.4
+- Cucumber — testes BDD
+- RSpec — validações
+- HTTParty — requisições HTTP
+- Faker — geração de dados dinâmicos
+- Rubocop — linting e boas práticas
+
+---
+
+## ✨ Autor
+
+Feito com dedicação por Rafael Damas
+
+🔗 GitHub: https://github.com/rafaeldamas
